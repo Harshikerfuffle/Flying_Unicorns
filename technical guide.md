@@ -76,21 +76,23 @@ def determine_response (body)
     return response
 ```
 <br />
-**3. In Gemfile**
+**3. In Gemfile** <br />
+
 ```
 gem 'google-cloud-dialogflow', '~> 0.2.2'
 ```
 <br />
-**4. In .env file**
+**4. In .env file** <br />
+
 ```
 GOOGLE_CLOUD_PROJECT = "your_project_id"
 GOOGLE_APPLICATION_CREDENTIALS = $PWD/service_account.json
 ```
 The api can do the rest of the work of finding your unique project id in the text editor.<br />
 
-**5. In Terminal**
-```gem install google-cloud-dialogflow```
-How to set up google cloud api in the Heroku environment variables:
+**5. In Terminal** <br />
+``` gem install google-cloud-dialogflow ```<br />
+How to set up google cloud api in the Heroku environment variables:<br />
 - Works after cd and the file path
 - This is done to ensure that intents from dialogflow can be received by heroku, sent to our code and the intent be mapped to the output
 
