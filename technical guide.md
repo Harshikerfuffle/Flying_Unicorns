@@ -92,8 +92,20 @@ The api can do the rest of the work of finding your unique project id in the tex
 
 **5. In Terminal** <br />
 ``` gem install google-cloud-dialogflow ```<br />
+
 How to set up google cloud api in the Heroku environment variables:<br />
 - Works after cd and the file path
-- This is done to ensure that intents from dialogflow can be received by heroku, sent to our code and the intent be mapped to the output
+- This is done to ensure that intents from dialogflow can be received by heroku, sent to our code and the intent be mapped to the output<br />
+
+```
+#check the existing config vars
+heroku config
+#set up a new variable, i.e. google cloud api
+Heroku config:set GOOGLE_CLOUD_PROJECT="project_id"
+#remember to take care of not having any space before and after "="
+```
+___
+
+fin
 
 
