@@ -1,15 +1,16 @@
-**Technical Guide**: How to use dialogueflow to extract intents from user inputs, map it to our code and give users output<br />
+#### Technical Guide
+How to use dialogueflow to extract intents from user inputs, map it to our code and give users output<br />
 **by**: Harshika Jain, MIIPS Adv 2018 <br />
 **Course**: 49714-A1
 ___
-**What is DialogFlow?** <br />
+### What is DialogFlow? <br />
 Previously known as API.AI, this became known as DialogFlow after being acquired by Google. It offers NLP for building into a chatbot interface such as keyword matching, understanding human speech to derive intent and meaning etc.<br />
 
 The way it can be used:
 ![alt text](https://github.com/Harshikerfuffle/flying-unicorns/blob/master/dialogflow_ruby1.png)
 
 ### Implementation<br />
-**1. In DialogFlow**<br />
+#### 1. In DialogFlow<br />
 For setting up Dialogflow, an account needs to be set up and an agent needs to be created. Here are the tutorials for the same:<br />
 - Create a dialogflow account: (https://dialogflow.com/docs/getting-started/create-account)<br />
 - Create an agent: (https://dialogflow.com/docs/getting-started/first-agent)<br />
@@ -17,7 +18,7 @@ For setting up Dialogflow, an account needs to be set up and an agent needs to b
 
 ![alt text](https://github.com/Harshikerfuffle/flying-unicorns/blob/master/image3.png)
 
-**Adding intents in Dialogflow**
+#### Adding intents in Dialogflow
 
 - A helpful video: (https://www.youtube.com/watch?v=2CVP6xe2ssk)<br />
 - How to make an intent screenshot<br />
@@ -26,7 +27,7 @@ Training phrases: “upcoming events”, “events”, “upcoming birthdays”<
 
 ![alt text](https://github.com/Harshikerfuffle/flying-unicorns/blob/master/image1.png)
 
-**2. In Text Editor**
+#### 2. In Text Editor
 - Also refer to the following code repo which has examples of adding dialogflow to ruby: <br /> https://github.com/GoogleCloudPlatform/ruby-docs-samples/blob/master/dialogflow/detect_intent_texts.rb
 
 ```
@@ -76,13 +77,15 @@ def determine_response (body)
     return response
 ```
 <br />
-**3. In Gemfile** <br />
+
+#### 3. In Gemfile
 
 ```
 gem 'google-cloud-dialogflow', '~> 0.2.2'
 ```
 <br />
-**4. In .env file** <br />
+
+#### 4. In .env file
 
 ```
 GOOGLE_CLOUD_PROJECT = "your_project_id"
@@ -90,7 +93,7 @@ GOOGLE_APPLICATION_CREDENTIALS = $PWD/service_account.json
 ```
 The api can do the rest of the work of finding your unique project id in the text editor.<br />
 
-**5. In Terminal** <br />
+#### 5. In Terminal
 ``` gem install google-cloud-dialogflow ```<br />
 
 How to set up google cloud api in the Heroku environment variables:<br />
