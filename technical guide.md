@@ -1,4 +1,4 @@
-#### Technical Guide
+**Technical Guide**:<br />
 How to use dialogueflow to extract intents from user inputs, map it to our code and give users output<br />
 **by**: Harshika Jain, MIIPS Adv 2018 <br />
 **Course**: 49714-A1
@@ -83,7 +83,6 @@ def determine_response (body)
 ```
 gem 'google-cloud-dialogflow', '~> 0.2.2'
 ```
-<br />
 
 #### 4. In .env file
 
