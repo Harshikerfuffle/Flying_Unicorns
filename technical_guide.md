@@ -7,7 +7,7 @@ ___
 Previously known as API.AI, this became known as DialogFlow after being acquired by Google. It offers NLP for building into a chatbot interface such as keyword matching, understanding human speech to derive intent and meaning etc.<br />
 
 The way it can be used:
-![alt text](https://github.com/Harshikerfuffle/flying-unicorns/blob/master/dialogflow_ruby1.png)
+![alt text](https://github.com/Harshikerfuffle/flying-unicorns/blob/master/Images/dialogflow_ruby1.png)
 
 ### Implementation<br />
 #### 1. In DialogFlow<br />
@@ -16,7 +16,7 @@ For setting up Dialogflow, an account needs to be set up and an agent needs to b
 - Create an agent: (https://dialogflow.com/docs/getting-started/first-agent)<br />
 - Where to find your project_id (will be used later in .env file)<br />
 
-![alt text](https://github.com/Harshikerfuffle/flying-unicorns/blob/master/image3.png)
+![alt text](https://github.com/Harshikerfuffle/flying-unicorns/blob/master/Images/image3.png)
 
 #### Adding intents in Dialogflow
 
@@ -25,7 +25,7 @@ For setting up Dialogflow, an account needs to be set up and an agent needs to b
 Example intent name: EventIntent<br />
 Training phrases: “upcoming events”, “events”, “upcoming birthdays”<br />
 
-![alt text](https://github.com/Harshikerfuffle/flying-unicorns/blob/master/image1.png)
+![alt text](https://github.com/Harshikerfuffle/flying-unicorns/blob/master/Images/image1.png)
 
 #### 2. In Text Editor
 - Also refer to the following code repo which has examples of adding dialogflow to ruby: <br /> https://github.com/GoogleCloudPlatform/ruby-docs-samples/blob/master/dialogflow/detect_intent_texts.rb
