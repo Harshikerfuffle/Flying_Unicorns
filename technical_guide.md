@@ -88,7 +88,6 @@ gem 'google-cloud-dialogflow', '~> 0.2.2'
 
 ```
 GOOGLE_CLOUD_PROJECT = "your_project_id"
-GOOGLE_APPLICATION_CREDENTIALS = $PWD/service_account.json
 ```
 The api can do the rest of the work of finding your unique project id in the text editor.<br />
 
